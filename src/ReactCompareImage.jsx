@@ -84,8 +84,7 @@ function ReactCompareImage(props) {
   // to make the component responsive.
   useEffect(() => {
     const updateContainerWidth = () => {
-      const currentContainerWidth = containerRef.current.getBoundingClientRect()
-        .width;
+      const currentContainerWidth = containerRef.current.offsetWidth;
       setContainerWidth(currentContainerWidth);
     };
 
